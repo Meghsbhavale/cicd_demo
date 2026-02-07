@@ -1,4 +1,6 @@
-import pytest
+import sys, os, pytest
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+
 from app import app
 
 @pytest.fixture
